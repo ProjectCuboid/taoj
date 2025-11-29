@@ -1,1 +1,1 @@
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/assets/logo.png?raw=true)
+![alt text](https://github.com/ProjectCuboid/taoj/blob/main/assets/logo.png?raw=true)

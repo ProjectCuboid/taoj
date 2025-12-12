@@ -1,1 +1,1 @@
-![Alt text](assets/Vector.svg)
+![Alt text](./assets/Vector.svg)

@@ -4,9 +4,28 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>taoj - uptime</title>
+
+<!-- Preconnect for faster font loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
 <style>
-  * { margin:0; padding:0; font-family:'Courier New', monospace; transition: all 0.3s ease-in-out; }
-  body { width:100%; height:100vh; display:flex; justify-content:center; align-items:center; background:#111; color:#fff; }
+  * { 
+    margin:0; 
+    padding:0; 
+    font-family: 'Montserrat', 'Special Gothic Expanded One', sans-serif; 
+    transition: all 0.3s ease-in-out; 
+  }
+  body { 
+    width:100%; 
+    height:100vh; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    background:#111; 
+    color:#fff; 
+  }
   .clock { text-align:center; }
   .date { font-size:2rem; margin-bottom:10px; }
   .time { display:flex; justify-content:center; font-size:4rem; }

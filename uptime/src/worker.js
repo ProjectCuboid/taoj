@@ -53,10 +53,10 @@ const html = `<!DOCTYPE html>
   
   .logo { 
     position: absolute;
-    top: 5px; 
+    top: 15px; 
     right: 20px; 
-    height: calc(10vh + 30px);
-    max-height: 90px;
+    height: calc(10vh + 10px);
+    max-height: 80px;
     width: auto;
   }
   
@@ -91,9 +91,9 @@ const html = `<!DOCTYPE html>
     }
     
     .logo {
-      height: calc(8vh + 20px);
-      max-height: 70px;
-      top: 5px;
+      height: calc(8vh + 5px);
+      max-height: 65px;
+      top: 12px;
       right: 15px;
     }
     
@@ -114,9 +114,9 @@ const html = `<!DOCTYPE html>
     }
     
     .logo {
-      height: calc(6vh + 10px);
-      max-height: 55px;
-      top: 5px;
+      height: calc(6vh + 5px);
+      max-height: 50px;
+      top: 10px;
       right: 10px;
     }
     

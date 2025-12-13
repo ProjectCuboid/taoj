@@ -136,7 +136,7 @@ const html = `<!DOCTYPE html>
     }
     
     .logo {
-      height: 5vh;
+      height: 10vh;
       max-height: 35px;
     }
   }

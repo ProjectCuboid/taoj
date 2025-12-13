@@ -77,8 +77,8 @@ function clock() {
   const min = String(d.getMinutes()).padStart(2,'0');
   const sec = String(d.getSeconds()).padStart(2,'0');
 
-  document.getElementById('date').textContent = `\${year} - \${month} - \${day}      \${weekDay}`;
-  document.getElementById('time').textContent = `\${hr}:\${min}:\${sec}`;
+  document.getElementById('date').textContent = \`\${year} - \${month} - \${day} \${weekDay}\`;
+  document.getElementById('time').textContent = \`\${hr} : \${min} : \${sec}\`;
 }
 
 clock();

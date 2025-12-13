@@ -16,7 +16,15 @@ const html = `<!DOCTYPE html>
     padding:0; 
     font-family: 'Special Gothic Expanded One', sans-serif; 
     transition: all 0.3s ease-in-out; 
+    box-sizing: border-box;
   }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
   body { 
     width:100%; 
     height:100vh; 
@@ -27,14 +35,31 @@ const html = `<!DOCTYPE html>
     color:#fff; 
     flex-direction: column;
     text-align: center;
+    position: relative;
   }
+  
   p { 
     margin: 10px 0; 
   }
 
-  .date { font-size: 2rem; }
-  .time { font-size: 4rem; letter-spacing: 0.2em; }
-  .logo { top: 20px; height: 10vh; right: 20px; position: absolute; }
+  .date { 
+    font-size: 2rem; 
+  }
+  
+  .time { 
+    font-size: 4rem; 
+    letter-spacing: 0.2em; 
+  }
+  
+  .logo { 
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    height: 10vh;
+    max-height: 60px;
+    width: auto;
+  }
+  
   .topbar {
     position: absolute;
     left: 0;
@@ -53,6 +78,68 @@ const html = `<!DOCTYPE html>
   #tb1 { top: 0; }
   #tb2 { top: calc(10vh + 40px); }
 
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .date { 
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+    
+    .time { 
+      font-size: 2.5rem;
+      letter-spacing: 0.1em;
+    }
+    
+    .logo {
+      height: 8vh;
+      max-height: 50px;
+      top: 15px;
+      right: 15px;
+    }
+    
+    #tb2 { 
+      top: calc(8vh + 30px); 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .date { 
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+    
+    .time { 
+      font-size: 1.8rem;
+      letter-spacing: 0.08em;
+    }
+    
+    .logo {
+      height: 6vh;
+      max-height: 40px;
+      top: 10px;
+      right: 10px;
+    }
+    
+    #tb2 { 
+      top: calc(6vh + 20px); 
+    }
+  }
+
+  @media (max-width: 360px) {
+    .date { 
+      font-size: 0.75rem;
+    }
+    
+    .time { 
+      font-size: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+    
+    .logo {
+      height: 5vh;
+      max-height: 35px;
+    }
+  }
 </style>
 
 </head>

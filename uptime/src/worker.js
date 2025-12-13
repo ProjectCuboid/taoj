@@ -53,7 +53,7 @@ const html = `<!DOCTYPE html>
   
   .logo { 
     position: absolute;
-    top: 15px; 
+    top: 25px; 
     right: 20px; 
     height: calc(10vh + 10px);
     max-height: 80px;

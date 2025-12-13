@@ -8,13 +8,13 @@ const html = `<!DOCTYPE html>
 <!-- Preconnect for faster font loading -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 
 <style>
   * { 
     margin:0; 
     padding:0; 
-    font-family: 'Montserrat', 'Special Gothic Expanded One', sans-serif; 
+    font-family: 'Special Gothic Expanded One', sans-serif; 
     transition: all 0.3s ease-in-out; 
   }
   body { 
@@ -26,7 +26,10 @@ const html = `<!DOCTYPE html>
     background:#111; 
     color:#fff; 
   }
-  .clock { text-align:center; }
+  .clock { 
+    text-align:center; 
+    font-family: 'Special Gothic Expanded One', sans-serif;
+  }
   .date { font-size:2rem; margin-bottom:10px; }
   .time { display:flex; justify-content:center; font-size:4rem; }
   .time div { width:60px; text-align:center; }

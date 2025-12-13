@@ -1,6 +1,7 @@
 #!/bin/bash
 # deploy.sh - multi-worker deploy with Wrangler OAuth
 
+# WORKER FOLDERS
 workers=("uptime" "home")
 
 git pull origin main

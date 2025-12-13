@@ -1,0 +1,20 @@
+name: Deploy uptime worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'uptime/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Wrangler
+        run: npm install -g wrangler
+      - name: Deploy Worker
+        run: npx wrangler deploy
+        working-directory: uptime
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

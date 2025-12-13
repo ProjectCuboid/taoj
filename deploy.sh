@@ -1,15 +1,12 @@
 #!/bin/bash
-# deploy.sh
-
-set -e
-
-echo "Pulling latest from GitHub..."
-git pull origin main
+# deploy.sh - multi-worker deploy with Wrangler OAuth
 
 workers=("uptime" "home")
 
+git pull origin main
+
 for w in "${workers[@]}"; do
-    echo "Deploying $w Worker..."
+    echo "Deploying $w..."
     cd "$w"
     npx wrangler deploy
     cd ..

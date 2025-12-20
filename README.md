@@ -1,1 +1,1 @@
-![Alt text](https://raw.githubusercontent.com/ProjectCuboid/taoj/refs/heads/main/rawgitstore/logo.svg)
+![Alt text](https://raw.githubusercontent.com/ProjectCuboid/taoj/refs/heads/main/assets/logo.svg))
